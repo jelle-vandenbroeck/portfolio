@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #dbb926;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.links {
+    float: left;
+    margin-right: 15px;
+}
+
