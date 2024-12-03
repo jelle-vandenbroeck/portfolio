@@ -6,12 +6,12 @@
 
 .links {
     float: left;
-    margin-right: 15px;
+    margin: 15px;
 }
 
 .rechts {
     float: right;
-    margin-left: 15px;
+    margin: 15px;
 }
 
 .profielfoto {
@@ -22,3 +22,18 @@
     color: #dbb926;
 }
 
+.logo {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+}
+
+.required {
+    color: red;
+}
+
+.h5 {
+    margin-top: 15px;
+}
+
+#map { height: 250px; width: 400px;}

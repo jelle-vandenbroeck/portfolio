@@ -11,49 +11,53 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/map.js" defer></script>
 </head>
 
 <body>
 
  
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-md container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="POWER web" class="logo"></a>
     <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav w-100 d-flex justify-content-between">
-          <li class="nav-item flex-fill text-center">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item flex-fill text-center">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item dropdown flex-fill text-center">
-            <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projecten
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="projectDropdown">
-              <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
-              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
-              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
-              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
-              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
-              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 d-flex justify-content-between">
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="index.html">home</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="portfolio.html">portfolio</a>
+                </li>
+                <li class="nav-item dropdown flex-fill text-center">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projecten
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+                        <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+                        <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+                        <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+                        <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+                        <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item flex-fill text-center">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
-  </nav>
+</nav>
 
 
   <header class="container text-center my-5">
-    <h1>Neem Contact Op</h1>
-    <p>Vul het formulier in en ik neem zo snel mogelijk contact met u op.</p>
+    <h1>Contact</h1>
   </header>
 
 
@@ -97,36 +101,33 @@
               </a>
             </li>
           </ul>
+          <div id="map"></div>
         </div>
       </aside>
     </div>
   </section>
 
-  <section class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <form action="mailto:vandenbroeckjelle@gmail.com" method="post" enctype="text/plain">
-          <div class="mb-3">
-            <label for="name" class="form-label">Naam</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label">Onderwerp</label>
-            <input type="text" class="form-control" id="subject" name="subject" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Bericht</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Verstuur</button>
-        </form>
+  <form action="mailto:vandenbroeckjelle@gmail.com" method="post">
+    <div class="col-md-8 offset-md-2">
+      <div class="mb-3">
+        <label for="name" class="form-label">Naam <span class="required">*</span></label>
+        <input type="text" class="form-control" id="name" name="name" required>
       </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail <span class="required">*</span></label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Onderwerp <span class="required">*</span></label>
+        <input type="text" class="form-control" id="subject" name="subject" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Bericht <span class="required">*</span></label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Verstuur</button>
     </div>
-  </section>
+  </form>
 
 
 

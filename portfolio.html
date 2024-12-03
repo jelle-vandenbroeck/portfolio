@@ -15,12 +15,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="POWER web" class="logo"></a>
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav w-100 d-flex justify-content-between">
                     <li class="nav-item flex-fill text-center">
                         <a class="nav-link" href="index.html">home</a>
@@ -32,7 +34,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projecten
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="projectDropdown">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
                             <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
                             <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
@@ -49,99 +51,103 @@
         </div>
     </nav>
 
-<section class="container my-5">
-    <div class="row">
-        <div class="col-12 mb-4 d-flex align-items-center">
-            <div class="row w-100 content-section">
-                <div class="col-md-6 order-md-1">
-                    <figure>
-                        <img src="assets/images/setup.jpg" alt="Project 1 Image" class="img-fluid" width="400px">
-                        <figcaption>Innovatieve Website Ontwikkeling</figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-6 order-md-2 content-text">
-                    <h5>Project 1</h5>
-                    <p>Korte beschrijving van Project 1. Dit project gaat over Innovatieve Website Ontwikkeling</p>
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1 class="text-center">Overzichtspagina</h1>
+    </header>
+    <section class="container my-5">
+        <div class="row">
 
-        <div class="col-12 mb-4 d-flex align-items-center">
-            <div class="row w-100 content-section">
-                <div class="col-md-6 order-md-2">
-                    <figure class="rechts">
-                        <img src="assets/images/server.jpg" alt="Project 2 Image" class="img-fluid" width="400px">
-                        <figcaption>Netwerkconfiguratie</figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-6 order-md-1 content-text">
-                    <h5>Project 2</h5>
-                    <p>Korte beschrijving van Project 2. Dit project gaat over Automatisering van Netwerkconfiguratie voor KMO's</p>
+            <div class="col-12 mb-4 d-flex card">
+                <div class="row w-100 content-section">
+                    <div class="col-md-6 order-md-1">
+                        <figure class="links">
+                            <img src="assets/images/setup.jpg" alt="Project 1 Image" class="img-fluid" width="400px">
+                            <figcaption>Innovatieve Website Ontwikkeling</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 order-md-2 content-text">
+                        <h5 class="h5">Project 1</h5>
+                        <p>Korte beschrijving van Project 1. Dit project gaat over Innovatieve Website Ontwikkeling</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 mb-4 d-flex align-items-center">
-            <div class="row w-100 content-section">
-                <div class="col-md-6 order-md-1">
-                    <figure>
-                        <img src="assets/images/voertuig.jpg" alt="Project 3 Image" class="img-fluid" width="400px">
-                        <figcaption>Voertuigdiagnose Tool</figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-6 order-md-2 content-text">
-                    <h5>Project 3</h5>
-                    <p>Korte beschrijving van Project 3. Dit project gaat over Real-Time Voertuigdiagnose Tool</p>
+            <div class="col-12 mb-4 d-flex card">
+                <div class="row w-100 content-section">
+                    <div class="col-md-6 order-md-2">
+                        <figure class="rechts">
+                            <img src="assets/images/server.jpg" alt="Project 2 Image" class="img-fluid" width="400px">
+                            <figcaption>Netwerkconfiguratie</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 order-md-1 content-text">
+                        <h5 class="h5">Project 2</h5>
+                        <p>Korte beschrijving van Project 2. Dit project gaat over Automatisering van Netwerkconfiguratie voor KMO's</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 mb-4 d-flex align-items-center">
-            <div class="row w-100 content-section">
-                <div class="col-md-6 order-md-2">
-                    <figure class="rechts">
-                        <img src="assets/images/besturing.jpg" alt="Project 4 Image" class="img-fluid" width="400px">
-                        <figcaption>Netwerkbeveiliging</figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-6 order-md-1 content-text">
-                    <h5>Project 4</h5>
-                    <p>Korte beschrijving van Project 4. Dit project gaat over Optimalisatie van Netwerkbeveiliging voor KMO's</p>
+            <div class="col-12 mb-4 d-flex card">
+                <div class="row w-100 content-section">
+                    <div class="col-md-6 order-md-1">
+                        <figure class="links">
+                            <img src="assets/images/voertuig.jpg" alt="Project 3 Image" class="img-fluid" width="400px">
+                            <figcaption>Voertuigdiagnose Tool</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 order-md-2 content-text">
+                        <h5 class="h5">Project 3</h5>
+                        <p>Korte beschrijving van Project 3. Dit project gaat over Real-Time Voertuigdiagnose Tool</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 mb-4 d-flex align-items-center">
-            <div class="row w-100 content-section">
-                <div class="col-md-6 order-md-1">
-                    <figure>
-                        <img src="assets/images/geforce.jpg" alt="Project 5 Image" class="img-fluid" width="400px">
-                        <figcaption>Backups en Herstel</figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-6 order-md-2 content-text">
-                    <h5>Project 5</h5>
-                    <p>Korte beschrijving van Project 5. Dit project gaat over Systeem voor Automatische Backups en Herstel</p>
+            <div class="col-12 mb-4 d-flex card">
+                <div class="row w-100 content-section">
+                    <div class="col-md-6 order-md-2">
+                        <figure class="rechts">
+                            <img src="assets/images/besturing.jpg" alt="Project 4 Image" class="img-fluid" width="400px">
+                            <figcaption>Netwerkbeveiliging</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 order-md-1 content-text">
+                        <h5 class="h5">Project 4</h5>
+                        <p>Korte beschrijving van Project 4. Dit project gaat over Optimalisatie van Netwerkbeveiliging voor KMO's</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 mb-4 d-flex align-items-center">
-            <div class="row w-100 content-section">
-                <div class="col-md-6 order-md-2">
-                    <figure class="rechts">
-                        <img src="assets/images/schermen.jpg" alt="Project 6 Image" class="img-fluid" width="400px">
-                        <figcaption>Bedrijfsmedewerkers</figcaption>
-                    </figure>
+            <div class="col-12 mb-4 d-flex card">
+                <div class="row w-100 content-section">
+                    <div class="col-md-6 order-md-1">
+                        <figure class="links">
+                            <img src="assets/images/geforce.jpg" alt="Project 5 Image" class="img-fluid" width="400px">
+                            <figcaption>Backups en Herstel</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 order-md-2 content-text">
+                        <h5 class="h5">Project 5</h5>
+                        <p>Korte beschrijving van Project 5. Dit project gaat over Systeem voor Automatische Backups en Herstel</p>
+                    </div>
                 </div>
-                <div class="col-md-6 order-md-1 content-text">
-                    <h5>Project 6</h5>
-                    <p>Korte beschrijving van Project 6. Dit project gaat over Digitale Aanwezigheidsregistratie voor Bedrijfsmedewerkers</p>
+            </div>
+
+            <div class="col-12 mb-4 d-flex card">
+                <div class="row w-100 content-section">
+                    <div class="col-md-6 order-md-2">
+                        <figure class="rechts">
+                            <img src="assets/images/schermen.jpg" alt="Project 6 Image" class="img-fluid" width="400px">
+                            <figcaption>Bedrijfsmedewerkers</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 order-md-1 content-text">
+                        <h5 class="h5">Project 6</h5>
+                        <p>Korte beschrijving van Project 6. Dit project gaat over Digitale Aanwezigheidsregistratie voor Bedrijfsmedewerkers</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>  
+    </section>  
 
 </body>
 </html>
