@@ -19,8 +19,8 @@ nav a:hover {
     margin: 15px;
 }
 
-.profielfoto {
-    width: 100px;
+figure {
+    margin: 0;
 }
 
 .kleur {
@@ -37,7 +37,7 @@ nav a:hover {
     color: red;
 }
 
-.h5 {
+.h3 {
     margin-top: 15px;
 }
 
@@ -46,6 +46,7 @@ a.unlink {
     text-decoration: none;
 }
 
+.button {
+    background-color: #dbb926;
+}
 
-
-#map { height: 250px; width: 400px;}
