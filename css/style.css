@@ -50,3 +50,6 @@ a.unlink {
     background-color: #dbb926;
 }
 
+body {
+    overflow-x: hidden;
+}
